@@ -1,0 +1,47 @@
+.container {
+    margin: 5% auto;
+    max-width: 40em;
+    border: 3px solid black;
+}
+
+#result {
+    padding: 1vh 3vw;
+    background-color: darkseagreen;
+    font-size: 50px;
+    text-align: right;
+}
+.hidden {
+    color: darkseagreen;
+}
+
+.bot {
+    display: flex;
+    padding: 15px;
+    background-color: darkgray;
+    justify-content: center;
+    align-items: end;
+}
+label {
+    font-size:15px;
+}
+.one, .two, .op {
+    width: 20%;
+}
+input {
+    width: 75%;
+    height: 25px;
+    font-size: 25px;
+}
+
+select {
+    width: 50%;
+    height: 30px;
+    font-size: 25px;
+}
+
+button {
+    font-size: 25px;
+}
+
+
+

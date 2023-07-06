@@ -1,0 +1,202 @@
+:root {
+    --section-padding: 15px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        margin: 0;
+        font-family: 'Inconsolata', monospace;
+        display: grid;
+        grid-row-gap: 5vw;
+        grid-template:
+        "header"
+        "left"
+        "mid"
+        "right"
+        "foo";
+    }
+
+    header > img {
+        width: 100vw;
+    }
+
+    .navbar {
+        display: none;
+        padding: 2vw;
+        font-size: 2vh;
+        list-style: none;
+    }
+
+    .navbar.show {
+        display: block;
+    }
+
+    li {
+        cursor: pointer;
+        padding-block: 20px;
+        border-bottom: 2px solid black;
+    }
+
+    a {
+        margin-left: 3vw;
+    }
+
+
+    .left {
+        padding: 5vw;
+        grid-area: left;
+    }
+
+    .right {
+        padding: 5vw;
+        grid-area: right;
+    }
+
+    .mid {
+        padding: 5vw;
+        grid-area: mid;
+        display: grid;
+        grid-gap: 2vh;
+        grid-template:
+        "h1"
+        "tl"
+        "tr"
+        "dl"
+        "dr";
+    }
+
+    .mid > div {
+        text-align: center;
+    }
+
+    .mid > div > img {
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        font-size: 5vh;
+        float: right;
+    }
+
+    .hamburger>.fa-xmark {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        font-family: 'Inconsolata', monospace;
+        display: grid;
+        grid-row-gap: 1vh;
+        grid-column-gap: 3vw;
+        grid-template:
+    "header header header"
+    "left mid right"
+    "foo foo foo";
+    }
+
+    header > img {
+        padding: 1vh;
+        alignment: left;
+        object-fit: cover;
+        height: 10vh;
+    }
+
+    .navbar {
+        padding-right: var(--section-padding);
+        font-size: 3vh;
+        list-style: none;
+        text-align: center;
+        float: right;
+    }
+
+    li:last-child {
+        border-inline-end: none;
+    }
+
+    li {
+        padding: 5px;
+        float: left;
+        border-inline-end: 2px solid black;
+    }
+
+    .left {
+        padding: var(--section-padding);
+        grid-area: left;
+    }
+
+    .right {
+        padding: var(--section-padding);
+        grid-area: right;
+    }
+
+    .mid {
+        padding: var(--section-padding);
+        grid-area: mid;
+        display: grid;
+        grid-gap: 10px;
+        grid-template:
+        "h1 h1"
+        "tl tr"
+        "dl dr";
+    }
+
+    .mid > div > img {
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+h1 {
+    grid-area: h1;
+}
+
+footer {
+    grid-area: foo;
+    text-align: center;
+    background-color: black;
+    color: #f0f0f0;
+}
+
+.dl {
+    grid-area: dl;
+}
+
+.dr {
+    grid-area: dr;
+}
+
+.tl {
+    grid-area: tl;
+}
+
+.tr {
+    grid-area: tr;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

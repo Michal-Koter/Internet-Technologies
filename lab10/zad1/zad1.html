@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <script src="zad1.js"></script>
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addDiv()">Dodaj</button>
+    <button onclick="removeDiv()">Usuń</button>
+    <button onclick="colorDiv()">Zmień kolor</button>
+    <button onclick="textDiv()">Tekst</button>
+
+    <div id="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

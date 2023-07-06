@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+    <script src="zad2.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="result" class="hidden">0</div>
+
+        <div class="bot">
+            <div class="one">
+                <label for="first">Pierwsza liczba</label><br>
+                <input type="number" id="first" placeholder="0">
+            </div>
+            <div class="two">
+                <label for="second">Druga liczba</label><br>
+                <input type="number" id="second" placeholder="0">
+            </div>
+            <div class="op">
+                <label for="operation">Działanie</label><br>
+                <select id="operation">
+                    <option value="add">+</option>
+                    <option value="odd">-</option>
+                    <option value="mul">*</option>
+                    <option value="div">/</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button onclick="calculate()">Oblicz</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
