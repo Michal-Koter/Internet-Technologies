@@ -1,0 +1,116 @@
+body {
+    padding: 0.5% 5%;
+    background-image: url("marcus-lenk-kCa6cRVtgWI-unsplash.jpg");
+    align-content: center;
+}
+
+main {
+    padding: 1%;
+    overflow-y: scroll;
+    grid-area: main;
+    background-color: rgba(67, 159, 57, 1);
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(67, 159, 57, 0.5);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(31, 103, 23, 1);
+    text-align: center;
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20vw;
+    grid-template-rows: 80vh;
+    grid-template-areas:
+    "header main"
+    "footer footer";
+}
+
+.capibara {
+    max-width: 60%;
+    height: auto;
+}
+
+a {
+    padding: 2%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-decoration-line: none;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+}
+
+ul > li {
+    background-color: rgba(147, 200, 141, 1);
+}
+
+ul > li > a {
+    font-weight: bold;
+}
+
+ul > li > a:hover {
+    background-color: rgba(116, 159, 111, 1);
+}
+
+ul > li > ul > li {
+    background-color: rgba(187, 201, 185, 1);
+    text-indent: 2vw;
+}
+
+ul > li > ul > li > a:hover {
+    background-color: rgba(146, 163, 144, 1)
+}
+
+.name {
+    grid-area: name;
+}
+
+.description {
+    grid-area: description;
+}
+
+.age {
+    grid-area: age;
+}
+
+.radio {
+    grid-area: radio;
+}
+
+.form{
+    padding-bottom:8vh;
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: 50%;
+    grid-template-areas:
+    "name age"
+    "description radio";
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(147, 200, 141, 1);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(187, 201, 185, 1);
+}

@@ -1,0 +1,212 @@
+@media (max-width:1000px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .left {
+        width: 98%;
+        height: 100%;
+        padding: 1%;
+        grid-area: left;
+        background-color: rgba(167, 159, 57, 1);
+    }
+
+    .right {
+        width: 98%;
+        height: 100%;
+        padding: 1%;
+        grid-area: right;
+        background-color: rgba(167, 159, 57, 1);
+    }
+
+    main {
+        padding: 1%;
+        grid-area: main;
+        background-color: rgba(100,100,100,1);
+        display: grid;
+        grid-template-rows: 50vh;
+        row-gap: 1vh;
+        grid-template-areas:
+        "left"
+        "right";
+        align-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-content: center;
+        margin: 0;
+    }
+
+    .left {
+        padding: 1%;
+        grid-area: left;
+        background-color: rgba(167, 159, 57, 1);
+    }
+
+    .right {
+        padding: 1%;
+        grid-area: right;
+        background-color: rgba(167, 159, 57, 1);
+    }
+
+    main {
+        padding: 1%;
+        grid-area: main;
+        background-color: rgba(100,100,100,1);
+        display: grid;
+        grid-template-columns: 45%;
+        grid-column-gap: 5%;
+        grid-template-areas:
+    "left right";
+    }
+}
+
+
+header {
+    grid-area: header;
+    background-color: rgba(111, 113, 23, 1);
+}
+
+p.one {
+    grid-area: one;
+}
+
+p.two {
+    grid-area: two;
+}
+
+p.three {
+    grid-area: three;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(131, 103, 23, 1);
+    color: white;
+    display: grid;
+    grid-template-columns: 32vw 32vw 32vw;
+    grid-template-areas:
+    "one two three";
+    grid-column-gap: 2vw;
+    text-align: center;
+}
+
+footer > p {
+    display: inline-block;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 5vh 88vh;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.capibara {
+    width: 100%;
+    max-height: 25vh;
+    object-fit: cover;
+}
+
+a {
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+ul > a {
+    text-decoration:none;
+    color: black;
+    padding:0 5px;
+}
+
+ul > li {
+    float:left;
+    width:150px;
+    margin-left:1px;
+    height:2em;
+}
+
+ul > li:first-child {
+    margin-left:0;
+}
+
+ul > li:hover {
+    background-color: rgba(140, 95, 55, 1);
+}
+
+ul > li:hover > ul {
+    display:block;
+}
+
+ul > li > ul {
+    display:none;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+ul > li > ul > li {
+    position:relative;
+    background-color: rgba(140, 95, 55, 1);
+}
+
+ul > li > ul > li:hover {
+    background-color:rgba(115, 95, 60, 1);
+}
+
+table {
+    width: 50%;
+    padding: 5%;
+}
+
+td {
+    border-bottom: 1px solid black;
+    text-align: center;
+
+}
+
+form {
+    background-color: khaki;
+    padding: 1%;
+}
+
+form > div {
+    padding: 1%;
+}
+
+input#name {
+    width: 99%;
+}
+
+textarea#description {
+    width: 99%;
+}
+
+select#age {
+    width: 99%;
+}
